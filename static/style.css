@@ -1,0 +1,247 @@
+body, button, input, select, textarea{
+    font-family: "Sarabun";
+}
+
+.head-text{
+    margin-left: 20px;
+}
+
+.head-text .title{
+    font-size: 55px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.head-text .description{
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 0;
+}
+
+.button{
+    justify-content: center;
+    display: block;
+    align-items: center;
+    position: relative;
+}
+
+.head-text-page{
+    margin-left: 8px;
+}
+
+.head-text-page .title-page{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.paragraph{
+    margin-left: 8px;
+    margin-top: 25px;
+}
+
+.page-button{
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: black 3px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.page-button .title{
+    font-size: 25px;
+    margin: 20px 15px;
+}
+
+.page-button .description{
+    font-size: 16px;
+    font-weight: 200;
+    margin-left: 15px;
+}
+
+.button-row1{
+    display: flex;
+    justify-content: center;
+}
+
+.button-row2{
+    display: flex;
+    justify-content: center;
+}
+
+.center-dot{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.hamburger{
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.side-nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s ease;
+}
+
+.side-nav a{
+    padding: 20px 24px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.2s;
+}
+
+.nav-text{
+    display: inline-block;
+    white-space: nowrap;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.side-nav div{
+    margin-top: 8px;
+    margin-right: 10px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+}
+
+.side-nav:hover{
+    background-color: #575757;
+}
+
+.overlay{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 900;
+}
+
+.dropdown-button{
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.dropdown-button.active i{
+    transform: rotate(180deg);
+}
+
+.dropdown-menu{
+    height: 0;
+    z-index: 900;
+    position: relative;
+    margin: 0 5px;
+    overflow-x: hidden;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.dropdown-menu div{
+    flex: 1;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.d1{
+    border-bottom: black 1px solid;
+}
+
+.scope a{
+    text-decoration: none;
+    color: blue;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.upload-container{
+    width: 400px;
+    height: 300px;
+    margin: 10px auto;
+    border: black 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-container p{
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+}
+
+#real-input{
+    display: none;
+}
+
+#real-camera{
+    display: none;
+}
+
+.buttons{
+    width: 120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons button{
+    margin: 10px;
+}
+
+.text-result{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.text-explain{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.triangle{
+    margin: 40px 8px;
+}
+
+@media (max-width: 480px){
+    .button-row1,
+    .button-row2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .page-button{
+        max-width: 90%;
+        margin: 10px 0;
+        height: 150px;
+    }
+    .upload-container{
+        max-width: 100%;
+    }
+}
