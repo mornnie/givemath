@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>givemath</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet">
+        <script src="{{url_for('static', filename='script.js')}}"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script>
+            window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)'], ['$', '$']],
+                displayMath: [['$$', '$$']]
+            },
+            svg: { fontCache: 'global' }
+            };
+        </script>
+    </head>
+    <body>
+        <div class="hamburger" id="menu-toggle-outside">&#9776</div>
+        <div class="side-nav" id="side-menu">
+            <div class="hamburger" id="menu-toggle-inside">&#9776</div>
+            <a href="/"><span class="nav-text">หน้าหลัก</span></a>
+            <a href="/topic"><span class="nav-text">เนื้อหา</span></a>
+            <a href="/scanner"><span class="nav-text">สแกนเนอร์</span></a>
+            <a href="/example"><span class="nav-text">ตัวอย่างโจทย์</span></a>
+        </div>
+        <div class="overlay" id="overlay"></div>
+            <div class="head-text-page">
+                <p class="title-page">ตัวอย่างโจทย์</p>
+                <p class="description"></p>
+            </div>
+        </div>
+        <div class="triangle">
+            <div class="triangle-text" id="triangle-text"></div>
+        </div>
+        <div class="rectangle">
+            <div class="rectangle-text"></div>
+        </div>
+    </body>
+</html>
